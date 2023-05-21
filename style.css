@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ffffff;
+  color: #eee;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+  height: 75px;
+}
+
+#logo-container {
+  display: inline-block;
+  position: relative;
+  left: 1.2%;
+  top: 15%;
+  width: 40px;
+}
+
+.title-container {
+  text-align: center;
+  color: black;
+  margin-top: 10px;
+}
+
+#darkmode-container {
+  position: relative;
+  right: 1.1%;
+  top: 2%;
+}
+
+#logo-container:hover,
+#dark-mode-btn {
+  cursor: pointer;
+}
+
+#logo-container img {
+  width: 100%;
+}
+
+#dark-mode-btn {
+  border: none;
+  width: 50px;
+  height: 50px;
+  background-image: url(./img/darkmode.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+main {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+#color-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+.color-palette {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 20px;
+  height: 140px;
+  list-style: none;
+  width: 50%;
+}
+
+.color,
+#button-random-color {
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 100px;
+  height: 100px;
+}
+
+.color:hover,
+#button-random-color:hover,
+#clear-board:hover,
+#generate-board:hover {
+  -xpedu-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+#board {
+  margin-top: 30px;
+  margin-bottom: 150px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#board-size {
+  height: 30px;
+  margin-left: 10px;
+  font-size: 20px;
+  border-radius: 8px;
+  width: 180px;
+  text-align: center;
+}
+
+.pixel {
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 15%;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  margin: 2.3px;
+}
+
+#clear-button-container {
+  display: inline-block;
+  text-align: center;
+  align-items: center;
+}
+
+#clear-board {
+  margin-top: 30px;
+  background-color: deepskyblue;
+  border: 2px solid black;
+  border-radius: 20px;
+  width: 120px;
+  height: 50px;
+  color: white;
+  font-size: 16px;
+}
+
+#size-button-container {
+  margin-top: 30px;
+}
+
+#generate-board {
+  border-radius: 23%;
+  width: 38px;
+  height: 25px;
+  margin-left: 10px;
+  color: whitesmoke;
+  background-color: red;
+  border: 1px solid black;
+}
+
+footer {
+  height: 60px;
+  width: 100%;
+  border-top: 1px solid black;
+}
+
+/* Peguei o código do titulo no https://codepen.io/Coding_Journey/pen/BEMgbX */
+/* Código do titulo */
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title-container p {
+  font-size: 3rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+  color: black;
+}
+.title-container p span.typed-text {
+  font-weight: normal;
+  color: deepskyblue;
+}
+.title-container p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.title-container p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}
+
+/* fim do código do titulo */
