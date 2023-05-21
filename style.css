@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 * {
   padding: 0;
   margin: 0;
@@ -7,7 +7,7 @@
 body {
   width: 100%;
   height: 100%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: #ffffff;
   color: #eee;
 }
@@ -22,14 +22,6 @@ header {
   height: 75px;
 }
 
-#logo-container {
-  display: inline-block;
-  position: relative;
-  left: 1.2%;
-  top: 15%;
-  width: 40px;
-}
-
 .title-container {
   text-align: center;
   color: black;
@@ -39,7 +31,15 @@ header {
 #darkmode-container {
   position: relative;
   right: 1.1%;
-  top: 2%;
+  top: 15%;
+}
+
+#logo-container {
+  display: inline-block;
+  position: relative;
+  left: 1.2%;
+  top: 20%;
+  width: 40px;
 }
 
 #logo-container:hover,
@@ -117,8 +117,8 @@ main {
   margin-left: 10px;
   font-size: 20px;
   border-radius: 8px;
-  width: 180px;
-  text-align: center;
+  width: 120px;
+  text-align: right;
 }
 
 .pixel {
@@ -166,6 +166,39 @@ footer {
   height: 60px;
   width: 100%;
   border-top: 1px solid black;
+  display: inline-block;
+  text-align: right;
+}
+
+#social-nav {
+  margin-right: 3%;
+  margin-top: 1%;
+}
+
+#linkedin {
+  position: relative;
+  bottom: 7px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-image: url(./img/linkedin-light.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#github {
+  margin-left: 20px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-image: url(./img/github-light.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#linkedin:hover,
+#github:hover {
+  cursor: pointer;
 }
 
 /* Peguei o código do titulo no https://codepen.io/Coding_Journey/pen/BEMgbX */
