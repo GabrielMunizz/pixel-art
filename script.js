@@ -248,16 +248,25 @@ loadBoard();
 //
 // Cria nav no footer //
 //
+/*
 const footer = document.querySelector("footer");
 const socialNav = document.createElement("nav");
-const linkedinBtn = document.createElement("button");
-const gitHubBtn = document.createElement("button");
+const btnLabel = document.createElement("label");
+const linkedinBtn = document.createElement("a");
+const gitHubBtn = document.createElement("a");
+const icon = document.createElement("i");
 socialNav.id = "social-nav";
+btnLabel.id = "social-content";
 linkedinBtn.id = "linkedin";
 gitHubBtn.id = "github";
 footer.appendChild(socialNav);
-socialNav.appendChild(linkedinBtn);
-socialNav.appendChild(gitHubBtn);
+socialNav.appendChild(btnLabel);
+btnLabel.appendChild(gitHubBtn);
+btnLabel.appendChild(linkedinBtn);
+linkedinBtn.appendChild(icon);
+gitHubBtn.appendChild(icon);
+linkedinBtn.setAttribute("target", "_blank");
+gitHubBtn.setAttribute("target", "_blank");
 //
 //
 // Cria função que redireciona usuario a pagina do github e linkedin ao clicar no botão //
@@ -268,9 +277,10 @@ linkedinBtn.addEventListener("click", (event) => {
 gitHubBtn.addEventListener("click", (event) => {
   window.location.href = "https://github.com/GabrielMunizz";
 });
+*/
 //
 //
-// Cria dark mode //
+// Cria dark mode no input #change-theme //
 //
 const changeTheme = document.querySelector("#change-theme");
 const body = document.querySelector("body");
@@ -284,16 +294,12 @@ changeTheme.addEventListener("change", () => {
     getPalette.classList.add("dark-palette");
     header.classList.add("dark-header");
     footer.classList.add("dark-footer");
-    linkedinBtn.id = "darkLinkedin";
-    gitHubBtn.id = "darkGitHub";
   } else {
     body.classList.remove("dark");
     titleP.classList.remove("dark-title");
     getPalette.classList.remove("dark-palette");
     header.classList.remove("dark-header");
     footer.classList.remove("dark-footer");
-    linkedinBtn.id = "linkedin";
-    gitHubBtn.id = "github";
   }
 });
 // Código de animação do titulo Pixel Art, fonte : https://codepen.io/Coding_Journey/pen/BEMgbX //

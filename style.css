@@ -164,41 +164,21 @@ footer {
   height: 100%;
   width: 100%;
   border-top: 1px solid black;
-  display: inline-block;
-  text-align: right;
+  display: flex;
+  justify-content: right;
 }
 
-#social-nav {
-  margin-right: 3%;
+#social-content {
+  display: flex;
+  justify-content: space-evenly;
+  width: 10%;
   margin-top: 1%;
 }
 
+#github,
 #linkedin {
-  position: relative;
-  bottom: 7px;
-  width: 40px;
-  height: 40px;
-  border: none;
-  background-image: url(./img/linkedin-light.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+  font-size: 2rem;
 }
-
-#github {
-  margin-left: 20px;
-  width: 50px;
-  height: 50px;
-  border: none;
-  background-image: url(./img/github-light.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-#linkedin:hover,
-#github:hover {
-  cursor: pointer;
-}
-
 /* Peguei o código do titulo no https://codepen.io/Coding_Journey/pen/BEMgbX */
 /* Código do titulo */
 
@@ -274,26 +254,6 @@ footer {
   border-top: 1px solid white;
 }
 
-#darkLinkedin {
-  background-image: url(./img/linkedin-dark.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  bottom: 7px;
-  width: 40px;
-  height: 40px;
-  border: none;
-}
-
-#darkGitHub {
-  margin-left: 20px;
-  width: 50px;
-  height: 50px;
-  border: none;
-  background-image: url(./img/github-light.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
 .bi {
   font-size: 1.5rem;
 }
