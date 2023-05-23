@@ -254,6 +254,27 @@ footer {
   border-top: 1px solid white;
 }
 
+#dark-clear {
+  border: 2px solid white;
+  margin-top: 30px;
+  background-color: deepskyblue;
+  border-radius: 20px;
+  width: 120px;
+  height: 50px;
+  color: white;
+  font-size: 16px;
+}
+
+#dark-generate {
+  border-radius: 23%;
+  width: 38px;
+  height: 25px;
+  margin-left: 10px;
+  color: whitesmoke;
+  background-color: red;
+  border: 1px solid white;
+}
+
 .bi {
   font-size: 1.5rem;
 }

@@ -261,12 +261,16 @@ changeTheme.addEventListener("change", () => {
     getPalette.classList.add("dark-palette");
     header.classList.add("dark-header");
     footer.classList.add("dark-footer");
+    clearBtn.id = "dark-clear";
+    sizeButton.id = "dark-generate";
   } else {
     body.classList.remove("dark");
     titleP.classList.remove("dark-title");
     getPalette.classList.remove("dark-palette");
     header.classList.remove("dark-header");
     footer.classList.remove("dark-footer");
+    clearBtn.id = "clear-board";
+    sizeButton.id = "generate-board";
   }
 });
 // Código de animação do titulo Pixel Art, fonte : https://codepen.io/Coding_Journey/pen/BEMgbX //
