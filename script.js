@@ -246,40 +246,6 @@ const loadBoard = () => {
 loadBoard();
 //
 //
-// Cria nav no footer //
-//
-/*
-const footer = document.querySelector("footer");
-const socialNav = document.createElement("nav");
-const btnLabel = document.createElement("label");
-const linkedinBtn = document.createElement("a");
-const gitHubBtn = document.createElement("a");
-const icon = document.createElement("i");
-socialNav.id = "social-nav";
-btnLabel.id = "social-content";
-linkedinBtn.id = "linkedin";
-gitHubBtn.id = "github";
-footer.appendChild(socialNav);
-socialNav.appendChild(btnLabel);
-btnLabel.appendChild(gitHubBtn);
-btnLabel.appendChild(linkedinBtn);
-linkedinBtn.appendChild(icon);
-gitHubBtn.appendChild(icon);
-linkedinBtn.setAttribute("target", "_blank");
-gitHubBtn.setAttribute("target", "_blank");
-//
-//
-// Cria função que redireciona usuario a pagina do github e linkedin ao clicar no botão //
-//
-linkedinBtn.addEventListener("click", (event) => {
-  window.location.href = "https://www.linkedin.com/in/gabriel-muniz-868236272/";
-});
-gitHubBtn.addEventListener("click", (event) => {
-  window.location.href = "https://github.com/GabrielMunizz";
-});
-*/
-//
-//
 // Cria dark mode no input #change-theme //
 //
 const changeTheme = document.querySelector("#change-theme");
@@ -287,6 +253,7 @@ const body = document.querySelector("body");
 const titleP = document.querySelector(".title-container");
 const header = document.querySelector("header");
 const getPalette = document.querySelector("#color-palette");
+const footer = document.querySelector("footer");
 changeTheme.addEventListener("change", () => {
   if (changeTheme.checked) {
     body.classList.add("dark");
