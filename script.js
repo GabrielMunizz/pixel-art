@@ -246,15 +246,6 @@ const loadBoard = () => {
 loadBoard();
 //
 //
-// Cria botão darkMode dentro da nav darkmode-container //
-//
-const darkModeCont = document.querySelector("#darkmode-container");
-const darkBtn = document.createElement("button");
-darkBtn.title = "Dark mode";
-darkBtn.id = "dark-mode-btn";
-darkModeCont.appendChild(darkBtn);
-//
-//
 // Cria nav no footer //
 //
 const footer = document.querySelector("footer");
@@ -276,6 +267,34 @@ linkedinBtn.addEventListener("click", (event) => {
 });
 gitHubBtn.addEventListener("click", (event) => {
   window.location.href = "https://github.com/GabrielMunizz";
+});
+//
+//
+// Cria dark mode //
+//
+const changeTheme = document.querySelector("#change-theme");
+const body = document.querySelector("body");
+const titleP = document.querySelector(".title-container");
+const header = document.querySelector("header");
+const getPalette = document.querySelector("#color-palette");
+changeTheme.addEventListener("change", () => {
+  if (changeTheme.checked) {
+    body.classList.add("dark");
+    titleP.classList.add("dark-title");
+    getPalette.classList.add("dark-palette");
+    header.classList.add("dark-header");
+    footer.classList.add("dark-footer");
+    linkedinBtn.id = "darkLinkedin";
+    gitHubBtn.id = "darkGitHub";
+  } else {
+    body.classList.remove("dark");
+    titleP.classList.remove("dark-title");
+    getPalette.classList.remove("dark-palette");
+    header.classList.remove("dark-header");
+    footer.classList.remove("dark-footer");
+    linkedinBtn.id = "linkedin";
+    gitHubBtn.id = "github";
+  }
 });
 // Código de animação do titulo Pixel Art, fonte : https://codepen.io/Coding_Journey/pen/BEMgbX //
 //

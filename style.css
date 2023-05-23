@@ -10,6 +10,7 @@ body {
   font-family: "Montserrat", sans-serif;
   background-color: #ffffff;
   color: #eee;
+  transition: 0.3s;
 }
 
 header {
@@ -55,9 +56,6 @@ header {
   border: none;
   width: 50px;
   height: 50px;
-  background-image: url(./img/darkmode.png);
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 main {
@@ -163,7 +161,7 @@ main {
 }
 
 footer {
-  height: 60px;
+  height: 100%;
   width: 100%;
   border-top: 1px solid black;
   display: inline-block;
@@ -251,3 +249,65 @@ footer {
 }
 
 /* fim do código do titulo */
+
+/* Dark Theme */
+.dark {
+  background-color: #121719;
+  color: #fff;
+}
+.dark-header {
+  background-color: #263238;
+  border-bottom: 1px solid white;
+}
+
+.dark-title p {
+  color: #fff;
+  transition: 0.3s;
+}
+
+.dark-palette {
+  background-color: #263238;
+  border: 1px solid white;
+}
+
+.dark-footer {
+  border-top: 1px solid white;
+}
+
+#darkLinkedin {
+  background-image: url(./img/linkedin-dark.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  bottom: 7px;
+  width: 40px;
+  height: 40px;
+  border: none;
+}
+
+#darkGitHub {
+  margin-left: 20px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-image: url(./img/github-light.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.bi {
+  font-size: 1.5rem;
+}
+
+.bi-moon {
+  color: #263238;
+  transition: 0.3s;
+}
+
+.bi-sun {
+  color: #fff;
+  transition: 0.3s;
+}
+
+#change-theme {
+  display: none;
+}
